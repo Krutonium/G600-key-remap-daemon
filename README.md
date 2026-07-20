@@ -14,7 +14,7 @@ unplugging the mouse undoes it completely and instantly.
 
 ```nix
 {
-  inputs.g600-key-remap-daemon.url = "path:/wherever/you/put/this"; # or a git URL
+  inputs.g600-key-remap-daemon.url = "github:Krutonium/G600-key-remap-daemon"; # or a git URL
 
   outputs = { self, nixpkgs, g600-key-remap-daemon, ... }: {
     nixosConfigurations.somehost = nixpkgs.lib.nixosSystem {
